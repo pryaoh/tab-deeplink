@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.9",
+  "id": "",
+  "version": "0.1.0",
+  "packageName": "DeepLinkTest",
+  "developer": {
+    "name": "yaoh",
+    "websiteUrl": "https://",
+    "privacyUrl": "https:///privacy.html",
+    "termsOfUseUrl": "https:///tou.html"
+  },
+  "name": {
+    "short": "deepLinkTestTab",
+    "full": "deepLinkTestTab"
+  },
+  "description": {
+    "short": "DeepLink Test",
+    "full": "Teams Call DeepLink Test"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "8509ec5f-1b94-4763-bc81-70b02b0d67c8",
+      "name": "deepLinkTestTab",
+      "contentUrl": "https:///deepLinkTestTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "https://"
+  ],
+  "showLoadingIndicator": false
+}
